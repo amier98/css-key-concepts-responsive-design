@@ -6,8 +6,29 @@
   --camel: #d8a47f;
 }
 
-body {
-  background-color: var(--light);
+@media only screen and (min-width: 700px) {
+  .cat-name {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cat-name {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #753;
+    color: #dcb;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--light);
+  }
 }
 
 .card-container {
@@ -15,11 +36,19 @@ body {
   flex-wrap: wrap;
 }
 
+h1 {
+  font-size: 2.25rem;
+}
+
 .card {
   border: 2px solid black;
   border-radius: 6px;
   padding: 10px;
   margin: 10px;
+}
+
+p {
+  font-size: 1rem;
 }
 
 img {
